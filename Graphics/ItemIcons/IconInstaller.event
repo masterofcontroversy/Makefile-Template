@@ -1,0 +1,17 @@
+#ifndef IconTable
+    #define IconTable $5926F4
+#endif
+#ifndef SetIcon
+    #define SetIcon(ID) "ORG IconTable + ID * 128"
+#endif
+
+PUSH
+
+SetIcon(IronSwordIcon)
+#incbin "Swords/IronSword.4bpp"
+SetIcon(SteelSwordIcon)
+#incbin "Swords/SteelSword.4bpp"
+SetIcon(SilverSwordIcon)
+#incbin "Swords/SilverSword.4bpp"
+
+POP

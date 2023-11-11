@@ -1,0 +1,9 @@
+PUSH
+//Skip very beginning world map
+ORG $A39768
+EVBIT_MODIFY 0x1
+SKIPWN
+ENDA
+POP
+
+#include "TestChapter.event"

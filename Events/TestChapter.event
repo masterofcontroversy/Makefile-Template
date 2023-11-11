@@ -1,0 +1,60 @@
+
+EventPointerTable(0x07,ThisChapter)
+
+ALIGN 4
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN PlayerUnits PlayerUnits
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 4
+LocationBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+BeginningScene:
+FADU 60
+LOAD1 0 PlayerUnits
+ENUN
+LOAD1 0 EnemyUnits
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+ENDA
+
+PlayerUnits:
+UNIT Eirika EirikaLord Eirika Level(1,Ally,0) [1,0] 0x0 0x0 0x0 0x1 [IronSword] NoAI
+UNIT Seth Paladin Eirika Level(1,Ally,0) [1,1] 0x0 0x0 0x0 0x1 [IronSword] NoAI
+UNIT //Tells the game that the unit list has ended
+
+EnemyUnits:
+UNIT ONeill Fighter ONeill Level(3,Enemy,0) [0,1] 0x0 0x0 0x0 0x1 [SteelAxe, HandAxe] AttackInRangeAI
+UNIT

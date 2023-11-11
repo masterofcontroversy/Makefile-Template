@@ -1,0 +1,22 @@
+#ifdef _FE8_
+    #include "EAstdlib.event"
+    #include "Definitions.event"
+
+    ORG FreeSpace
+
+    #include "RepointedTextTable.event"
+    #include "Text/InstallTextData.event"
+
+    #include "Tables/TableInstaller.event"
+
+    #include "EngineHacks/_MasterHackInstaller.event"
+    
+    #include "Events/_EventInstaller.event"
+    #include "Maps/MapInstaller.event"
+
+    #include "Graphics/GraphicsInstaller.event"
+
+    MESSAGE Free Space ends at currentOffset Additions size is (currentOffset - FreeSpace)
+#else
+    ERROR Not building events on FE8 is a pitfall! Try again on a FE8 ROM.
+#endif

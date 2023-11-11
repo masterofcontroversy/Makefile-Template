@@ -1,0 +1,3 @@
+#include "ItemIcons/IconInstaller.event"
+#include "Portraits/_PortraitInstaller.event"
+#include "MapSprites/_MapSpriteInstaller.event"

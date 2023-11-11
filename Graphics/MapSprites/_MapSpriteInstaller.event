@@ -1,0 +1,35 @@
+//For standing map sprite assignments, see root/Tables/NightmareModules/MapSprite/StandingMapSpriteEditor.csv
+
+#define MovingMapSpriteTable 0x9A2E00
+#define MovingMapSpriteEntry(classID, graphic, anotherPointer) "PUSH; ORG MovingMapSpriteTable + ((classID-1) * 8); POIN graphic anotherPointer; POP"
+
+//Vanilla FE8 AP definitions
+#define NormalAP        $81C3D7C
+#define GeneralAP       $81C8A80
+#define RangerAP        $81CA124
+#define ArcherAP        $81D0A7C
+#define M_SageAP        $81D1D48
+#define SwordmasterAP   $81CE4FC
+#define HeroAP          $81CBD94
+#define FemaleSniperAP  $81D2714
+#define WyvernRiderAP   $81D403C
+#define WyvernLordAP    $81D5E58
+#define WyvernKnightAP  $81D7CC8
+#define MageAP          $81D8668
+#define F_SageAP        $81D8668
+#define GreatLordAP     $81C52B4
+#define JourneymanAP    $81E173C
+#define DancerAP        $81ED1C8
+#define BardAP          $81E8840
+#define CyclopsAP       $81F49B8
+#define DemonKingAP     $81FD028
+
+ALIGN 4
+FighterStandingSprite:
+#incbin "FighterStanding.4bpp.lz77"
+
+ALIGN 4
+FighterMovingSprite:
+#incbin "FighterMoving.4bpp.lz77"
+
+MovingMapSpriteEntry(Fighter, FighterMovingSprite, JourneymanAP)

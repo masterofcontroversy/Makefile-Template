@@ -1,0 +1,8 @@
+#include "TableDefinitions.event"
+
+#include "NightmareModules/ChapterData/ChapterData.event"
+#include "NightmareModules/CharactersClasses/CharacterTable.event"
+#include "NightmareModules/CharactersClasses/ClassTable.event"
+#include "NightmareModules/Items/ItemTable.event"
+#include "NightmareModules/Items/SpellAssociationList.event"
+#include "NightmareModules/MapSprite/StandingMapSpriteEditor.event"

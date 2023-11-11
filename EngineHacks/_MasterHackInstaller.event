@@ -1,0 +1,5 @@
+#include "Tools/Tool Helpers.txt"
+#include "Extensions/Hack Installation.txt"
+#include "_InlineHacks.event"
+
+#include "SkipHuffmanDecompression/Installer.event"

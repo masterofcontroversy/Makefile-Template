@@ -1,0 +1,32 @@
+
+#ifndef __SKIPHUFFMANDECOMPRESSION
+  #define __SKIPHUFFMANDECOMPRESSION
+
+  #include "Extensions/Hack Installation.txt"
+
+  /*
+   * This hack circumvents the Huffman encoding scheme used
+   * by the game to (de)compress text. Text table entries
+   * that do not use Huffman compression should set the
+   * uppermost bit in their pointers.
+   */
+
+  PUSH
+
+    ORG 0x00002BA4
+      replaceWithHack(HuffmanTextDecompReplacement)
+      #ifdef __DEBUG
+        MESSAGE Skip Huffman Decompression Hook 0x00002BA4 to CURRENTOFFSET
+      #endif // __DEBUG
+      RESERVE(0x00002BA4, 0x00002BB8)
+
+    ORG 0x0000A1C8
+      #include "SkipHuffmanDecompression.lyn.event"
+      #ifdef __DEBUG
+        MESSAGE Skip Huffman Decompression Main 0x0000A1C8 to CURRENTOFFSET
+      #endif // __DEBUG
+      RESERVE(0x0000A1C8, 0x0000A240)
+
+  POP
+
+#endif // __SKIPHUFFMANDECOMPRESSION

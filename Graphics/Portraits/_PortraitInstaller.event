@@ -1,0 +1,5 @@
+RonanPortrait:
+#incbin "Ronan_Stitch.portraitdmp"
+
+//setMugEntry(<mugindex>,<portrait label>,<mouth X>,<mouth Y>,<eye X>,<eye Y>)
+setMugEntry(0x2,RonanPortrait,3,5,3,3)

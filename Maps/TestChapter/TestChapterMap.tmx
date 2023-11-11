@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="FE8 - Fields - 01000203" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="FE8 - Fields - 01000203.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value="5"/>
+   <property name="Anims2" value="0"/>
+   <property name="ChapterID" value="0"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="6"/>
+   <property name="MapID" value="4"/>
+   <property name="ObjectType" value="1"/>
+   <property name="PaletteID" value="2"/>
+   <property name="TileConfig" value="3"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxdkbFKA1EQRSdrKWGjjYWVGAXBiKV9DAo2ifmEVaKdUfwBN7EQQeIfSMgH5BNstEgVC3sLQRCxENHSM8wVJcVh5t2ZO/PebsfMulNmS9Anrydmh9CAMtoXcY64CG/kTwWzd2IqT2bhWyBvoheJHc6bxB6xRH+VfBpeqfeSqNfk9/wZbtDviAO0KnEF39Ci7tqAuAdt7cwttBRm0GY1y+/yARf4H+zvft5zDTl7bqGCdgRN2LbY6f57WC7EXN83TqI21Pwz3d/1NvFAvhHs4FuFY/I16blm+7xU37jyz3dJ/7l8W5xP5PV7n8IGtPy/SHd/kd4avGiG+3Y1//cN89Q/J3Z10RraVaJ3H+1K9Uy+bwvfo/9Di56+3ptpzrre0dKdJn3OD+edRD4=
+  </data>
+ </layer>
+</map>
